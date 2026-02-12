@@ -6,7 +6,7 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:12:08 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/12 14:20:07 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/12 14:50:25 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,48 +18,48 @@
 
 int main()
 {
-	const Animal* Animals[N_ANIMALS];
+	const Animal* animals[N_ANIMALS];
 
 	for (int i = 0; i < N_ANIMALS; i++) {
 		if (i < N_ANIMALS / 2)
-			Animals[i] = new Dog();
+			animals[i] = new Dog();
 		else
-			Animals[i] = new Cat();
+			animals[i] = new Cat();
 	}
 
 	for (int i = 0; i < N_ANIMALS; i++) {
-		delete Animals[i];
+		delete animals[i];
 	}
 
 	// Dog deep copy test
-	Dog* Dog1 = new Dog();
-	Dog1->setIdea(0, "Idea A");
-	Dog* Dog2 = new Dog(*Dog1);
-	Dog* Dog3 = new Dog();
-	*Dog3 = *Dog2;
-	Dog3->setIdea(0, "Idea B");
+	Dog* dog1 = new Dog();
+	dog1->setIdea(0, "Idea A");
+	Dog* dog2 = new Dog(*dog1);
+	Dog* dog3 = new Dog();
+	*dog3 = *dog2;
+	dog3->setIdea(0, "Idea B");
 
-	std::cout << "Dog2: " << Dog2->getIdea(0) << std::endl;
-	std::cout << "Dog3: " << Dog3->getIdea(0) << std::endl;
+	std::cout << "Dog2: " << dog2->getIdea(0) << std::endl;
+	std::cout << "Dog3: " << dog3->getIdea(0) << std::endl;
 
-	delete Dog3;
-	delete Dog2;
-	delete Dog1;
+	delete dog3;
+	delete dog2;
+	delete dog1;
 
 	// Cat deep copy test
-	Cat* Cat1 = new Cat();
-	Cat1->setIdea(0, "Idea C");
-	Cat* Cat2 = new Cat(*Cat1);
-	Cat* Cat3 = new Cat();
-	*Cat3 = *Cat2;
-	Cat3->setIdea(0, "Idea D");
+	Cat* cat1 = new Cat();
+	cat1->setIdea(0, "Idea C");
+	Cat* cat2 = new Cat(*cat1);
+	Cat* cat3 = new Cat();
+	*cat3 = *cat2;
+	cat3->setIdea(0, "Idea D");
 
-	std::cout << "Cat2: " << Cat2->getIdea(0) << std::endl;
-	std::cout << "Cat3: " << Cat3->getIdea(0) << std::endl;
+	std::cout << "Cat2: " << cat2->getIdea(0) << std::endl;
+	std::cout << "Cat3: " << cat3->getIdea(0) << std::endl;
 
-	delete Cat3;
-	delete Cat2;
-	delete Cat1;
+	delete cat3;
+	delete cat2;
+	delete cat1;
 
 	return 0;
 }
