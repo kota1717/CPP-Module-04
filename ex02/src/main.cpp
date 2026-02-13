@@ -6,7 +6,7 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:12:08 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/12 14:55:30 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 16:30:26 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,12 @@ int main()
 
 	delete dog1;
 	delete cat1;
+
+	// const AAnimal* aanimal1 = new AAnimal();
+
+	// aanimal1->makeSound();
+
+	// delete aanimal1;
 
 	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:12:08 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/11 18:02:13 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 16:14:31 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int main()
 	const WrongAnimal* Animal = new WrongAnimal();
 	const WrongAnimal* Cat = new WrongCat();
 	std::cout << Cat->getType() << " " << std::endl;
-	Cat->makeSound(); //will output the cat sound!
+	Cat->makeSound();
 	Animal->makeSound();
 
 	delete Cat;
