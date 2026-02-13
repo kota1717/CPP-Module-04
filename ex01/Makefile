@@ -29,7 +29,6 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 clean:
 	$(RMDIR) $(OBJ_DIR)
-	$(RMDIR) $(NAME)
 
 fclean: clean
 	$(RM) $(NAME)

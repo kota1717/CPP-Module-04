@@ -6,11 +6,12 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 18:15:35 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/12 14:21:49 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 14:42:57 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef EX02_INCLUDE_BRAIN_HPP_
+#define EX02_INCLUDE_BRAIN_HPP_
 
 #include <iostream>
 
@@ -27,3 +28,5 @@ public:
 private:
 	std::string _ideas[100];
 };
+
+#endif

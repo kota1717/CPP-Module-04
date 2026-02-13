@@ -6,11 +6,12 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 17:25:51 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/12 14:51:02 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 15:30:06 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef EX02_INCLUDE_WRONGCAT_HPP_
+#define EX02_INCLUDE_WRONGCAT_HPP_
 
 #include "WrongAnimal.hpp"
 
@@ -22,3 +23,5 @@ public:
 	virtual ~WrongCat();
 	void makeSound() const;
 };
+
+#endif

@@ -1,4 +1,4 @@
-NAME := brain
+NAME := abstract_class
 
 CXX := c++
 CXXFLAGS := -Wall -Werror -Wextra -std=c++98 -pedantic -I includes
@@ -29,7 +29,6 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 clean:
 	$(RMDIR) $(OBJ_DIR)
-	$(RMDIR) $(NAME)
 
 fclean: clean
 	$(RM) $(NAME)

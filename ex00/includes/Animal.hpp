@@ -6,11 +6,12 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:13:09 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/11 16:55:31 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 13:57:20 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef EX00_INCLUDE_ANIMAL_HPP_
+#define EX00_INCLUDE_ANIMAL_HPP_
 
 #include <iostream>
 
@@ -26,3 +27,5 @@ public:
 protected:
 	std::string _type;
 };
+
+#endif

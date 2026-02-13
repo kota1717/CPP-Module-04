@@ -6,11 +6,12 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:13:13 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/12 14:08:06 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 14:40:17 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef EX01_INCLUDE_CAT_HPP_
+#define EX01_INCLUDE_CAT_HPP_
 
 #include "Animal.hpp"
 #include "Brain.hpp"
@@ -29,3 +30,5 @@ public:
 private:
 	Brain *_brain;
 };
+
+#endif

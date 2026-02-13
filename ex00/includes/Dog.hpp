@@ -6,11 +6,12 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:13:18 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/11 17:05:27 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 13:58:14 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef EX00_INCLUDE_DOG_HPP_
+#define EX00_INCLUDE_DOG_HPP_
 
 #include "Animal.hpp"
 
@@ -22,3 +23,5 @@ public:
 	virtual ~Dog();
 	virtual void makeSound() const;
 };
+
+#endif

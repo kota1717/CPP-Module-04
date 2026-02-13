@@ -6,11 +6,12 @@
 /*   By: ikota <ikota@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:13:18 by ikota             #+#    #+#             */
-/*   Updated: 2026/02/12 14:07:57 by ikota            ###   ########.fr       */
+/*   Updated: 2026/02/13 14:43:31 by ikota            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef EX02_INCLUDE_DOG_HPP_
+#define EX02_INCLUDE_DOG_HPP_
 
 #include "AAnimal.hpp"
 #include "Brain.hpp"
@@ -29,3 +30,5 @@ public:
 private:
 	Brain *_brain;
 };
+
+#endif

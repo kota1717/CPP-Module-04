@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef EX02_INCLUDE_WRONGANIMAL_HPP_
+#define EX02_INCLUDE_WRONGANIMAL_HPP_
 
 #include <iostream>
 
@@ -26,3 +27,6 @@ public:
 protected:
 	std::string _type;
 };
+
+#endif
+
